@@ -3,7 +3,7 @@ const launches = new Map();
 let latestFlightNumber = 100;
 
 const launch = {
-    flightNumber: 100,
+    flightNumber: latestFlightNumber,
     mission: 'Kepler Explonation X',
     rocket: 'Explorer IS1',
     launchDate: new Date('December 27, 2030'),
@@ -27,7 +27,7 @@ function addNewLaunch(launch) {
             success: true,
             upcoming:true,
             customers: ['aditi','NASA'],
-            flightNumber: latestFlightNumber + 1
+            flightNumber: latestFlightNumber
         })
     );
 }
