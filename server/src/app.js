@@ -22,7 +22,10 @@ app.use(launchesRouter);
 //server public file
 // >npm run server
 //localhost:8000/
-app.get('/',(req,res) => {
+
+//npm run deploy
+//localhost:8000/history
+app.get('/*',(req,res) => {
     res.sendFile(path.join(__dirname, '..', 'public', 'index.html'))
 })
 module.exports = app;
