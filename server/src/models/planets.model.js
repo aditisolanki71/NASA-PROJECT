@@ -40,7 +40,11 @@ function loadPlanetsData() {
 }
 console.log("lennn",habitablePlanets.length)
 console.log("111111111111 habitable",habitablePlanets)
+
+function getAllPlanet() {
+    return habitablePlanets;
+}
 module.exports = {
   loadPlanetsData,
-  planets: habitablePlanets,
+  getAllPlanet,
 };
