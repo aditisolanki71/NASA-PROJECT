@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-
+//2
 const planetsRouter = require('./routes/planets/planets.router')
 const app = express();
 
